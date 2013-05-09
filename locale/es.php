@@ -2,10 +2,10 @@
 
 return array
 (
-	'contents_news' => array
+	'news' => array
 	(
 		'All records' => 'Todas las noticias'
 	),
 
-	'module_title.contents_news' => 'Actualidades'
+	'module_title.news' => 'Actualidades'
 );

@@ -2,7 +2,7 @@
 
 return array
 (
-	'contents_news' => array
+	'news' => array
 	(
 		'All records' => 'Toutes les actualités',
 
@@ -23,5 +23,5 @@ return array
 		)
 	),
 
-	'module_title.contents_news' => 'Aktualitások'
+	'module_title.news' => 'Aktualitások'
 );

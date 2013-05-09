@@ -2,7 +2,7 @@
 
 return array
 (
-	'contents_news' => array
+	'news' => array
 	(
 		'All records' => 'Sve vijesti',
 
@@ -23,5 +23,5 @@ return array
 		)
 	),
 
-	'module_title.contents_news' => 'Vijesti'
+	'module_title.news' => 'Vijesti'
 );
