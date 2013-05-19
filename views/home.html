@@ -12,7 +12,7 @@
 
 		<div class="contents">
 			<p:if test="@image">
-			<img src="#{@image.thumbnail('news-home').url}" alt="#{@image.alt}" class="illustration" />
+			#{@image.thumbnail(':home')=}
 			</p:if>
 
 			#{@excerpt=}
