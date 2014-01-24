@@ -21,9 +21,9 @@ use Brickrouge\Element;
  */
 class EditBlock extends \Icybee\Modules\Contents\EditBlock
 {
-	protected function get_children()
+	protected function lazy_get_children()
 	{
-		return parent::get_children() + array
+		return parent::lazy_get_children() + array
 		(
 			Content::DATE => new \Brickrouge\Date
 			(

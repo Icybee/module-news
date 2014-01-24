@@ -13,7 +13,7 @@ namespace Icybee\Modules\News;
 
 class Module extends \Icybee\Modules\Contents\Module
 {
-	protected function get_views()
+	protected function lazy_get_views()
 	{
 		$assets = array
 		(
@@ -22,7 +22,7 @@ class Module extends \Icybee\Modules\Contents\Module
 
 		return \ICanBoogie\array_merge_recursive
 		(
-			parent::get_views(), array
+			parent::lazy_get_views(), array
 			(
 				'view' => $assets,
 				'list' => $assets,
