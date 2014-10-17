@@ -6,7 +6,7 @@
 			<p:if test="@category"><a href="#{@url('vocabulary/category/list')}" class="category #{@category.css_class('type id')}">#{@category}</a><span class="separator"> &ndash;</span></p:if>
 			<time datetime="#{@date}" pubdate="pubdate">#{@date.format_date()}</time>
 		</div>
-		
+
 		<p:if test="@image">
 		<a href="#{@url}">#{@image.thumbnail(':list')=}</a>
 		</p:if>
