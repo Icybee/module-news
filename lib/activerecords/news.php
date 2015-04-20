@@ -16,11 +16,5 @@ namespace Icybee\Modules\News;
  */
 class News extends \Icybee\Modules\Contents\Content
 {
-	/**
-	 * Defaults model to `news`.
-	 */
-	public function __construct($model='news')
-	{
-		parent::__construct($model);
-	}
+	const MODEL_ID = 'news';
 }

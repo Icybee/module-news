@@ -11,6 +11,7 @@
 
 namespace Icybee\Modules\Nodes;
 
+use ICanBoogie\ActiveRecord\ModelNotDefined;
 use ICanBoogie\Updater\Update;
 use ICanBoogie\Updater\AssertionFailed;
 
@@ -75,7 +76,15 @@ class Update20130429 extends Update
 
 	public function update_taxonomy_vocabulary_scope()
 	{
-		$model = $this->app->models['taxonomy.vocabulary/scopes'];
+		try
+		{
+			$model = $this->app->models['taxonomy.vocabulary/scopes'];
+		}
+		catch (ModelNotDefined $e)
+		{
+			throw new AssertionFailed(__FUNCTION__, []);
+		}
+
 		$count = $model->where('constructor = "contents.news"')->count;
 
 		if (!$count)

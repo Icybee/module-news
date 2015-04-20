@@ -23,17 +23,15 @@ class EditBlock extends \Icybee\Modules\Contents\EditBlock
 {
 	protected function lazy_get_children()
 	{
-		return parent::lazy_get_children() + array
-		(
-			Content::DATE => new \Brickrouge\Date
-			(
-				array
-				(
-					Form::LABEL => 'Date',
-					Element::REQUIRED => true,
-					Element::DEFAULT_VALUE => date('Y-m-d')
-				)
-			)
-		);
+		return array_merge(parent::lazy_get_children(), [
+
+			Content::DATE => new \Brickrouge\Date([
+
+				Form::LABEL => 'Date',
+				Element::REQUIRED => true,
+				Element::DEFAULT_VALUE => date('Y-m-d')
+
+			])
+		]);
 	}
 }

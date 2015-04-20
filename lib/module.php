@@ -15,19 +15,18 @@ class Module extends \Icybee\Modules\Contents\Module
 {
 	protected function lazy_get_views()
 	{
-		$assets = array
-		(
-			'assets' => array('css' => array(DIR . 'public/page.css'))
-		);
+		$assets = [
 
-		return \ICanBoogie\array_merge_recursive
-		(
-			parent::lazy_get_views(), array
-			(
-				'view' => $assets,
-				'list' => $assets,
-				'home' => $assets
-			)
-		);
+			'assets' => [ 'css' => [ DIR . 'public/page.css' ] ]
+
+		];
+
+		return \ICanBoogie\array_merge_recursive(parent::lazy_get_views(), [
+
+			'view' => $assets,
+			'list' => $assets,
+			'home' => $assets
+
+		]);
 	}
 }
