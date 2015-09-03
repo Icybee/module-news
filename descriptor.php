@@ -13,7 +13,7 @@ return [
 
 		'primary' => [
 
-			Model::CLASSNAME => __NAMESPACE__ . '\Model',
+			Model::CLASSNAME => NewsModel::class,
 			Model::EXTENDING => 'contents'
 
 		]
@@ -21,7 +21,6 @@ return [
 	],
 
 	Descriptor::NS => __NAMESPACE__,
-	Descriptor::TITLE => 'News',
-	Descriptor::VERSION => '1.0'
+	Descriptor::TITLE => 'News'
 
 ];

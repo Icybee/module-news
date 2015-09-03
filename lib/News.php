@@ -11,10 +11,12 @@
 
 namespace Icybee\Modules\News;
 
-/**
- * News model.
- */
-class Model extends \Icybee\Modules\Contents\Model
-{
+use Icybee\Modules\Contents\Content;
 
+/**
+ * A representation of a news.
+ */
+class News extends Content
+{
+	const MODEL_ID = 'news';
 }

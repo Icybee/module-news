@@ -18,9 +18,9 @@
 	},
 	"minimum-stability": "dev",
 	"require": {
-		"php": ">=5.3.0",
-		"icanboogie/module-installer": "*",
-		"icybee/module-contents": "2.x"
+		"php": ">=5.5.0",
+		"icanboogie/module-installer": "^1.2.3",
+		"icybee/module-contents": "^3.0.0"
 	},
 	"autoload": {
 		"classmap": [ "lib" ]
