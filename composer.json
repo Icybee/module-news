@@ -23,6 +23,8 @@
 		"icybee/module-contents": "^3.0.0"
 	},
 	"autoload": {
-		"classmap": [ "lib" ]
+		"psr-4": {
+			"Icybee\\Modules\\News\\": "lib"
+		}
 	}
 }

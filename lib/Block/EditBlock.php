@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Icybee\Modules\News;
+namespace Icybee\Modules\News\Block;
 
 use Icybee\Modules\Contents\Content;
 
@@ -19,7 +19,7 @@ use Brickrouge\Element;
 /**
  * Edit block for news.
  */
-class EditBlock extends \Icybee\Modules\Contents\EditBlock
+class EditBlock extends \Icybee\Modules\Contents\Block\EditBlock
 {
 	protected function lazy_get_children()
 	{

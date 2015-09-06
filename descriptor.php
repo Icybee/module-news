@@ -13,7 +13,8 @@ return [
 
 		'primary' => [
 
-			Model::CLASSNAME => NewsModel::class,
+//			Model::CLASSNAME => NewsModel::class,
+//			Model::ACTIVERECORD_CLASS => News::class,
 			Model::EXTENDING => 'contents'
 
 		]

@@ -11,12 +11,12 @@
 
 namespace Icybee\Modules\News;
 
-use Icybee\Modules\Contents\Content;
+use Icybee\Modules\Contents\ContentModel;
 
 /**
  * News model.
  */
-class NewsModel extends Content
+class NewsModel extends ContentModel
 {
 
 }

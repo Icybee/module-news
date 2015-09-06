@@ -13,20 +13,5 @@ namespace Icybee\Modules\News;
 
 class Module extends \Icybee\Modules\Contents\Module
 {
-	protected function lazy_get_views()
-	{
-		$assets = [
 
-			'assets' => [ 'css' => [ DIR . 'public/page.css' ] ]
-
-		];
-
-		return \ICanBoogie\array_merge_recursive(parent::lazy_get_views(), [
-
-			'view' => $assets,
-			'list' => $assets,
-			'home' => $assets
-
-		]);
-	}
 }
